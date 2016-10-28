@@ -198,19 +198,17 @@ public class Solutions {
 
 	public void endOfFile() {
 		Scanner scan = new Scanner(System.in);
-		ArrayList<String> line = new ArrayList<String>();
 		int i = 1;
 		try {
-			while (scan.hasNextLine())
-				line.add(scan.nextLine());
-
-			for (String printLine : line) {
-				System.out.println(i + " " + printLine);
+			while (scan.hasNextLine()) {
+				System.out.println(i + " " + scan.nextLine());
 				i++;
 			}
 		} catch (Exception e) {
 			System.out.println("Exception !!!!!!!");
 		}
 	}
+
+
 
 }
